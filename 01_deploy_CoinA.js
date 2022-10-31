@@ -5,7 +5,7 @@ module.exports = async ({
      getUnnamedAccounts,
    }) => {
      const {deploy} = deployments;
-     const {deployer1} = await getNamedAccounts();
+     const {deployer2, deployer1, deployer3} = await getNamedAccounts();
      const contractAdeployed = await deploy('coinA', {
        from: deployer1,
        gasLimit: 4000000,
