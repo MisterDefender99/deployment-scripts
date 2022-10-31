@@ -5,7 +5,7 @@ module.exports = async ({
      getUnnamedAccounts,
    }) => {
      const {deploy,get} = deployments;
-     const {deployer2} = await getNamedAccounts();
+     const {deployer2, deployer1, deployer3} = await getNamedAccounts();
      const coinAdeployedAddress =  await get('coinA');
     //  console.log("this is value of get(coinA): ",coinAdeployedAddress);
      const contractBdeployed = await deploy('coinB', {
